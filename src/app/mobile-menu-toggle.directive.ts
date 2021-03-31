@@ -8,7 +8,7 @@ export class MobileMenuToggleDirective {
   @HostListener('document:click', ['$event']) toggleOpen(event: Event) {
     this.isOpen = this.elRef.nativeElement.contains(event.target) ? !this.isOpen : false;
   }
-  constructor(public elRef: ElementRef) {
+  constructor(private elRef: ElementRef) {
   }
 
 }

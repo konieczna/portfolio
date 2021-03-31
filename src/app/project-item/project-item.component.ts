@@ -11,9 +11,9 @@ import {ProjectsService} from "../projects.service";
 export class ProjectItemComponent implements OnInit {
   projects: Projects;
   id: number;
-  constructor(public route: ActivatedRoute,
-              public projectsService: ProjectsService,
-              public router: Router) { }
+  constructor(private route: ActivatedRoute,
+              private projectsService: ProjectsService,
+              private router: Router) { }
 
   ngOnInit(): void {
     this.route.params

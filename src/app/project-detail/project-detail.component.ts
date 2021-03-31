@@ -11,7 +11,7 @@ import {ProjectsService} from "../projects.service";
 export class ProjectDetailComponent implements OnInit, OnDestroy {
   projects: Projects[] = [];
   subscription: Subscription;
-  constructor(public projectsService: ProjectsService) { }
+  constructor(private projectsService: ProjectsService) { }
 
   ngOnInit(): void {
     this.subscription = this.projectsService.projectsChanged
