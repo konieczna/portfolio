@@ -1,0 +1,30 @@
+<div id="project-{{ projects.id }}" class="project-section">
+  <div class="container">
+    <div class="col-12 col-md-8 offset-md-2">
+      <div class="go-back">
+        <a (click)="onGoBack()">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <line x1="5" y1="12" x2="19" y2="12" />
+            <line x1="5" y1="12" x2="11" y2="18" />
+            <line x1="5" y1="12" x2="11" y2="6" />
+          </svg>
+          Go back</a>
+      </div>
+      <div class="title-section">
+        <h1>{{ projects.name }}</h1>
+      </div>
+      <div class="project-detail">
+        <div class="project-image">
+          <img src="{{ projects.image }}" alt="{{ projects.name }}">
+        </div>
+        <div class="project-description">
+          <p>{{projects.description}}</p>
+        </div>
+        <div class="project-url">
+          <a class="btn magda-btn" target="_blank" rel="noopener noreferrer" href="{{ projects.url }}">Visit page</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

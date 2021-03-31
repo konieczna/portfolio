@@ -1,0 +1,19 @@
+h1 {
+  text-align: center;
+  margin: 15px 0 50px 0;
+}
+img {
+  width: 100%;
+}
+#about {
+  padding: 80px 0;
+}
+p, li {
+  color: #575757;
+  font-weight: 300;
+}
+@media (max-width: 767px) {
+  #about {
+    padding: 40px 0;
+  }
+}
